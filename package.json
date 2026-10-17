@@ -1,0 +1,77 @@
+{
+  "name": "godruoyi.com",
+  "type": "module",
+  "version": "1.0.0",
+  "homepage": "https://godruoyi.com",
+  "bugs": {
+    "url": "https://github.com/godruoyi/gblog/issues",
+    "email": "godruoyi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/godruoyi/gblog.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Godruoyi",
+    "email": "godruoyi@gmail.com",
+    "url": "https://godruoyi.com"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "dev:full": "./scripts/dev-with-functions.sh",
+    "dev:functions": "astro build && wrangler pages dev ./dist --ip 0.0.0.0 --live-reload",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "pages:dev": "wrangler pages dev ./dist --ip 0.0.0.0",
+    "pages:build": "astro build && wrangler pages dev ./dist --ip 0.0.0.0",
+    "astro": "astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^5.0.4",
+    "@astrojs/partytown": "2.1.7",
+    "@astrojs/react": "^5.0.4",
+    "@astrojs/rss": "4.0.18",
+    "@astrojs/sitemap": "3.7.2",
+    "@astrojs/tailwind": "^6.0.2",
+    "@docsearch/css": "^3.9.0",
+    "@docsearch/react": "^3.9.0",
+    "@giscus/react": "^3.1.0",
+    "@playform/compress": "^0.2.3",
+    "@rehype-pretty/transformers": "^0.13.2",
+    "@types/react": "^19.0.0",
+    "@types/unist": "^3.0.2",
+    "astro": "6.1.9",
+    "astro-compressor": "^0.4.1",
+    "mdast-util-to-string": "^4.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "reading-time": "^1.5.0",
+    "rehype-pretty-code": "^0.14.1",
+    "sharp": "^0.33.3",
+    "sharp-ico": "^0.1.5",
+    "shiki": "^3.2.2",
+    "tailwindcss": "^3.4.3",
+    "ultrahtml": "^1.5.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.18.0",
+    "@eslint-react/eslint-plugin": "^1.5.16",
+    "@tailwindcss/typography": "^0.5.13",
+    "astro-uploader": "^1.0.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-astro": "^1.2.0",
+    "eslint-plugin-format": "^0.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "mysql2": "^3.9.7",
+    "opendal": "^0.47.11",
+    "preline": "^2.1.0",
+    "timeago.js": "^4.0.2",
+    "unist-util-visit": "^5.0.0"
+  }
+}
